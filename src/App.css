@@ -1,5 +1,14 @@
 .App {
-  text-align: center;
+}
+
+@font-face {
+	font-family: Gravity-Regular;
+	src: url('./fonts/Gravity-Regular.otf') format('opentype');
+}
+
+h1 {
+	font-family: "Gravity-Regular";
+	text-align: center;
 }
 
 .App-logo {
@@ -18,8 +27,17 @@
   font-size: large;
 }
 
+.navigation {
+	
+}
+
 .navigation-sub {
 	font-size: large;
+	font-family: "Gravity-Regular";
+	display: flex;
+	flex-direction: row;
+	margin: 50px;
+	justify-content: space-around;
 }
 
 @keyframes App-logo-spin {
