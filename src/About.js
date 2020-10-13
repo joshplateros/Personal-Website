@@ -2,46 +2,51 @@ import React from 'react'
 import './About.css';
 import { MdStar } from "react-icons/md";
 
+//React bootstrap stuff
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 function About(props) {
 	return (
 		<div className ="About">
 			<h1> About </h1>
 			<p> Hello friends, my name is Joshua Plateros and I am currently a Senior at the University of Nevada, Reno with a major in Computer Science. My passions include winning in video games, playing music, as well as learning different frameworks and other technologies related to the CS field! </p>
 
-			<div className ="Technologies">
-				<h2> Technologies </h2>
-				<div className="TechnologyNames">
-					<div>
-					C++
-					<MdStar
-						style={{ margin: '0 5px' }}	
-					/>
-					<MdStar
-						style={{ margin: '0 5px' }}	
-					/> 
-					<MdStar
-						style={{ margin: '0 5px' }}	
-					/>
-					</div>
-					<div>
-						Python
-						<MdStar
-							style={{ margin: '0 5px' }}	
-						/>
-						<MdStar
-							style={{ margin: '0 5px' }}	
-						/>
-					</div>
-					<div>
-						Javascript
-						<MdStar
-							style={{ margin: '0 5px' }}	
-						/>
-					</div>
-				</div>
-			</div>
+			<Container>
+				<Jumbotron>
+					<div className ="Technologies">
+						<h2> Technologies </h2>
 
+						<Col>
+							<div className="TechnologyNames">
+								<div>
+								C++
+								<ProgressBar now={100} />
+								</div>
+							</div>
 
+							<div className="TechnologyNames">
+								<div>
+								Python
+								<ProgressBar now={50} />
+								</div>
+							</div>
+
+							<div className="TechnologyNames">
+								<div>
+								JavaScript
+								<ProgressBar now={25} />
+								</div>
+							</div>
+
+						</Col>
+
+					</div>
+				</Jumbotron>
+			</Container>
 		</div>
 			
 	)
