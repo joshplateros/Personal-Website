@@ -1,29 +1,35 @@
 .About {
-	margin: 30px;
-	padding: 10px;
+	margin: 15px;
+	padding-bottom: 10px;
 	text-align: center;
 }
 
 p {
-	font-size: large;
-	padding-top: 150px;
 	padding-left: 100px;
 	padding-right: 100px;
 	margin: 25px;
 }
 
 .Technologies {
-	padding-top: 25px;
+	padding-top: 100px;
 	padding-right: 1000px;
 }
 
+h2 {
+	position: absolute;
+	font-style: italic;
+}
+
+h3 {
+	position: absolute;
+
+}
 .TechnologyNames {
 	font-style: italic;
-	padding-right: 10px;
+	padding-top: 40px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: minmax(100px, auto);
-	width: 100%;
+	grid-auto-rows: minmax(10px, auto);
 }
 
 .container {
@@ -32,12 +38,14 @@ p {
 }
 
 .jumbotron {
-	width: 250px;
+	width: 500px;
 }
 
+.col {
+	float: left;
+}
 
 .progress-bar {
 	background-color: red;
-	height:100px;
 }
 
