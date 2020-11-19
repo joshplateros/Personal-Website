@@ -9,10 +9,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import picture from './images/ProfileImage.jpg';
+
 function About(props) {
 	return (
 		<div className ="About">
-			<h1> About </h1>
+			<h1> Joshua Plateros </h1>
+			<img src={picture} height="400" />
 			<p> Hello friends, my name is Joshua Plateros and I am currently a Senior at the University of Nevada, Reno with a major in Computer Science. My passions include winning in video games, playing music, as well as learning different frameworks and other technologies related to the CS field! </p>
 
 					<div className ="Technologies">
@@ -64,8 +67,7 @@ function About(props) {
 						</Col>
 					</div>
 
-			<h5> Hi</h5>
-			<p> Other stuff</p>
+			<p> </p>
 		</div>
 
 			

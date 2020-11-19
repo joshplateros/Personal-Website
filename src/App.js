@@ -4,8 +4,9 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 import Projects from './Projects.js';
 import Articles from './Articles.js';
-import About from './About.js';
-import Home from './Home.js';
+// Might just connect About to the Home screen
+//import About from './About.js';
+import Home from './About.js';
 
 import logo from './logo.svg';
 //import { ReactComponent as BellIcon } from './icons/bell.svg';
@@ -22,7 +23,6 @@ class App extends Component {
 					
 					<Link to="/" className="item">Home</Link>
 					<Link to="/articles" className="item">Articles</Link>
-					<Link to="/about" className="item">About</Link>
 					<Link to="/projects" className="item">Projects</Link>
 
 				</div>
@@ -31,7 +31,6 @@ class App extends Component {
 			<Route exact path="/" component={Home} />
 			<Route path="/articles" component={Articles} />
 			<Route path="/projects" component={Projects} />
-			<Route path="/about" component={About} />
 
 		  </div>
 		</BrowserRouter>
