@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
+// Navbar stuff
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 
 
 import Projects from './Projects.js';
@@ -20,10 +23,20 @@ class App extends Component {
 		  <div className="App">
 			<div className = "navigation">
 				<div className="navigation-sub">
+
+					<Navbar bg='dark' expand='lg' variant="dark">	
+						<Navbar.Brand href="/"> Home </Navbar.Brand>
+						<Navbar.Toggle aria-controls="basic-navbar-nav"/>
+						<Navbar.Collapse id="basic-navbar-nav"> 
+							<Nav className="mr-auto">
+								<Nav.Link href="/articles"> Articles </Nav.Link>
+								<Nav.Link href="/projects"> Projects </Nav.Link>
+								<Nav.Link href="/resume"> Resume </Nav.Link>
+							</Nav>	
+						</Navbar.Collapse>
+					</Navbar>
 					
-					<Link to="/" className="item">Home</Link>
-					<Link to="/articles" className="item">Articles</Link>
-					<Link to="/projects" className="item">Projects</Link>
+					
 
 				</div>
 			</div>
