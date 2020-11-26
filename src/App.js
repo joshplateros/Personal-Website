@@ -12,8 +12,9 @@ import Articles from './Articles.js';
 import Home from './About.js';
 
 import logo from './logo.svg';
-//import { ReactComponent as BellIcon } from './icons/bell.svg';
 import './App.css';
+// Resume!
+import Resume from './resume/Resume.pdf'
 
 class App extends Component {
   render() {
@@ -31,7 +32,7 @@ class App extends Component {
 							<Nav className="mr-auto">
 								<Nav.Link href="/articles"> Articles </Nav.Link>
 								<Nav.Link href="/projects"> Projects </Nav.Link>
-								<Nav.Link href="/resume"> Resume </Nav.Link>
+								<Nav.Link href={Resume} download> Resume </Nav.Link>
 							</Nav>	
 						</Navbar.Collapse>
 					</Navbar>

@@ -1,0 +1,65 @@
+.Projects {
+    padding-bottom: 10px;
+	/* Fade in animation */ 
+	animation: fadeIn ease 10s;
+	-webkit-animation: fadeIn ease 1s;
+	-moz-animation: fadeIn ease 1s;
+	-o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+    text-align: center;
+}
+
+dl.ProjectsList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+dt {
+    padding: 20px;
+}
+
+dd {
+    margin-bottom: 100px;
+    margin-left: 70%;
+    
+}
+
+#codingLanguages {
+    color: #888;
+    font-style: italic;
+    font-weight: bold;
+}
+
+i {
+    margin-left: 0px;
+}
+
+.ProjectsList a {
+    color: black;
+    text-decoration: none;
+}
+
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+	
+@-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+	
+@-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+}

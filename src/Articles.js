@@ -1,9 +1,10 @@
 import React from 'react'
+import './Articles.css';
 
 function Articles(props) {
 	return (
 		<div>
-			<h1> Articles </h1>
+			<p> I will implement a way to share blog posts here! How exciting!! </p>
 		</div>
 	)
 }
